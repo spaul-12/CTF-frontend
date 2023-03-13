@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="og:title" content="FOOBAR CTF">
+    <meta name="og:description" content="OP CTF">
+    <meta property="og:image" content="/files/bb4ad3d2a37db7a55a24e8c5c5bdc110/fb.png">
+    <link rel="apple-touch-icon" href="/files/7a92aefdc8d588a4ee62979a856228a8/logo.ico">
+
+    <title>FOOBAR CTF</title>
+
+    <link rel="shortcut icon" type="image/jpg" href="/files/bb4ad3d2a37db7a55a24e8c5c5bdc110/fb.png" />
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
+    <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.4/css/all.css'>
+    <link rel="stylesheet" href="/files/ab8955439a5a6946ac76aeaa90397eb5/style.css" media="screen">
+    <link rel="stylesheet" href="/files/733d5f0fd4c45cbeec222de42aa3e2d9/countdown.css" media="screen">
+    <link rel="stylesheet" href="/files/ea22fdcff028f4a8116702a1f9e2fcb0/discord.css" media="screen">
+    <style>
+        .card {
+            color: white;
+            background: transparent;
+        }
+
+        .card-title {
+            font-size: 30px;
+        }
+
+        .sponsors img {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="https://discord.gg/yBnJECFahM">
+            <div class="btn btn-dark floating-btn">
+                <i class="icon fab fa-discord"></i>
+                <div class="expanded">
+                    <span>
+                        <i class="far fa-comments"></i> Join us on Discord</span>
+                </div>
+            </div>
+        </a>
+        <nav class="x-heading" id="x-heading">
+            <a class="brand" href="#">FooBar CTF</a>
+        </nav>
+        <div class="content">
+            <div class="box">
+                <div class="imgdiv">
+                    <img src="/files/bb4ad3d2a37db7a55a24e8c5c5bdc110/fb.png" height="300" width="300"
+                        class="center-image" alt="...">
+                </div>
+
+                <br>
+
+                <div class="containers" style="display: flex;  align-items: center; padding: 0px 40px;">
+                    <div>
+                        <h2 id="headline">CTF STARTS IN</h2>
+                        <div class="time" style="opacity: 0; display:none;">{{ ctf_start }}</div>
+                        <div class="timeE" style="opacity: 0;display:none;">{{ ctf_end }}</div>
+                        <div id="countdown">
+                            <div>
+                                <li><span id="days"></span>days</li>
+                                <li><span id="hours"></span>Hours</li>
+                                <li><span id="minutes"></span>Minutes</li>
+                                <li><span id="seconds"></span>Seconds</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containers">
+                <h2 class="centered" style="font-size:35px;">OUR SPONSORs</h3>
+                    <div class="card-group" style="margin-top: 10px;">
+                        <div class="card" style="display:flex;align-items:center;">
+                          	<a href="https://prophaze.com/" title="Prophaze Technologies" target="_blank">
+                            <img src="/files/07eef9c78d9772ffff991cb785564eee/prophaze.png"
+                                style="width:300px;height: 150px;margin:30px; margin-left:40px" />
+                          	</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Title Sponsor</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card-group" style="margin-top: 10px;">
+                        <div class="card" style="display:flex;align-items:center;">
+                          	<a href="https://netfotech.in/" title="Netfotech Solutions" target="_blank">
+                            <img src="/files/0eb78ab5ce0d216e899655ebb91b29da/netfotech.png"
+                                style="height: 120px;width:300px; margin:30px;" />
+                          	</a>
+                            <div class="card-body">
+                                <h5 class="card-title">Technical Partner</h5>
+                            </div>
+                        </div>
+                        <div class="card" style="display:flex;align-items:center;">
+                          	<a href="https://pinacalabs.com/" title="Pinaca Labs" target="_blank">
+                            <img src="/files/9092a0dcc678019b4cff4420f96e8be1/pinaca.png"
+                                style="height: 120px; width:300px;margin:30px;" />
+                          </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Community Partner</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+        <div class="containers" style="padding-bottom:10px;">
+            <h3 class="centered">OTHER SPONSORS</h3>
+            <div class="sponsors">
+                <a href="https://goo.gle/ctfsponsorship" title="Infra sponsored by goo.gle/ctfsponsorship" target="_blank">
+                  <img src="/files/05267a74c5dc42ac1bf46133a4986f8e/google-cloud.jpg" height="100" width="200" />
+              	</a>
+                <a href="https://www.root-me.org" title="Root Me" target="_blank">
+                  <img src="/files/685baa4da63bfea437f0e38c34cf1a50/rootme.png" height="100" width="200" />
+              	</a>
+                <a href="https://cybrancee.com/" title="Cybrancee" target="_blank">
+                  <img src="/files/59992ec0f0db61c2c4a344fff1adcac9/Cybrancee.png" />
+              	</a>
+                <a href="https://www.offsec.com/" title="Offensive Security" target="_blank">
+                  <img src="/files/3c1641ddbac8354b82f902b892edc45e/offsec.png" height="100" width="200" />
+              	</a>
+                <a href="https://zsecurity.org/" title="zSecurity" target="_blank">
+                  <img src="/files/b55feb7e25036e6e6cbad3d5732137b7/zSecurity.png" height="100" width="200" />
+              	</a>
+            </div>
+
+
+
+
+            <div class="containers" style="padding-bottom:0px;">
+                <!-- <h4 class="centered"><a href="https://ctftime.org/event/1322">CTFtime</a></h4> -->
+                <h3 class="centered">Organized By</h3>
+                <div class="sponsors">
+                    <a href="https://nitdgplug.org/"><img src="/files/36da8daa7cb05b6141e8e794a1616d5f/glug_logo_hq.png"
+                            height="80" width="80" /></a>
+                </div>
+                <h5 class="centered">GNU/LINUX USERS' GROUP</h5>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script type="text/javascript" src="/files/0751921cb1fbb0e8df2dfd0623a8eb6e/countdown.js"></script>
+
+</html>
